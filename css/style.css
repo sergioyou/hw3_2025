@@ -2,6 +2,8 @@
 /*Your Code Here*/
 /* PLEASE DO NOT REMOVE MY COMMENTS.  THEY HELP US HELP YOU DEBUG. */
 
+/*For some that I needed help with such as span, I did use ChatGPT to assit me in that aspect because I did not fully know how to do it, so I asked chat to give an example of one and for ones i was not able to figure out I asked to fix it for me as well as an example of combining all (.method,.contact, etc with the media query stuff.*/
+
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
 nav a:hover,
