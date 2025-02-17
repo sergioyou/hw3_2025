@@ -16,15 +16,18 @@ nav a:focus {
 .skip {
      position: absolute;
      top: -40px;
-     left: 0;
-     display: none;
+     left: 10px;
+     background-color: white;
+     padding: 5px;
+     text-decoration: none;
+     color: black;
 }
 
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip:focus {
-     top: 10px;
-     display: block;
+     top: 20px;
+     outline: 2px solid black;
 }
 
 
