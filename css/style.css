@@ -113,37 +113,52 @@ first div in the grid  and place it in the grid. */
 
 /* Add your media query here */
 @media screen and (max-width: 768px) {
-  /* Adjust the container layout */
-  .container {
-     grid-template-columns: 1fr;
-     grid-row-gap: 20px;
-   }
- 
-   /* Adjust the first div in the grid */
-   .container > *:first-child {
-     height: 300px;
-   }
- 
-   /* Adjust the grid placement for other elements */
-   .about, .method, .clients, .contact {
-     grid-column: 1;
-   }
- 
-   /* Adjust the image heights */
-   .about-image, .method-image, .clients-image, .contact-image {
-     max-height: 400px;
-   }
- 
-   /* Adjust the text block */
-   .text-block {
-     height: auto;
-     padding: 20px;
-   }
- 
-   nav a {
-     font-size: 16px;
-   }
-}
+     .container {
+          width: 100%;  /* Full width of the screen */
+          max-width: 753px;  /* Restrict to 753px width */
+          margin: 0 auto;  /* Center the container horizontally */
+          grid-template-columns: 1fr;  /* Stack the columns into one */
+          grid-row-gap: 15px;  /* Adjust row gap */
+        }
+      
+        /* Adjust the first div in the grid */
+        .container > *:first-child {
+          height: 300px;
+        }
+      
+        /* Adjust the grid placement for other elements */
+        .about, .method, .clients, .contact {
+          grid-column: 1;  /* Full width for each of the elements */
+        }
+      
+        /* Adjust the image heights */
+        .about-image, .method-image, .clients-image, .contact-image {
+          max-height: 400px;
+        }
+      
+        /* Adjust the text block */
+        .text-block {
+          height: auto;
+          padding: 20px;
+        }
+      
+        /* Adjust font size for navigation links */
+        nav a {
+          font-size: 16px;
+        }
+      
+        /* Ensure the body/html don't affect layout */
+        body, html {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      
+        /* Ensure the parent elements don't restrict the container's width */
+        .container, .container * {
+          box-sizing: border-box;
+        }
+      }
  
   /* Step 10: Write the selector/rule property to update the .container class */
 
